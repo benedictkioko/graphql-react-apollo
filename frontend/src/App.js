@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import { ApolloProvider } from "@apollo/react-hooks"
-import { client } from "./apollo-client"
+import "./App.css";
+import { ApolloProvider } from "@apollo/react-hooks";
+import { client } from "./apollo-client";
+import { Task } from "./Task";
+import { AddTask } from "./AddTask";
 
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div className="App">Hello there</div>
+      <div>
+        <AddTask />
+        <Task />
+      </div>
     </ApolloProvider>
   );
 }
