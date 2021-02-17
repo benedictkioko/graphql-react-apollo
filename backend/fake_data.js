@@ -1,26 +1,26 @@
 const DAILY_TASKS = [
   {
-    task: "Make Coffee",
+    task: "React Hooks Learning",
     completed: false,
     id: 1,
   },
   {
-    task: "Learn GraphQl",
+    task: "Learn Apollo Client",
     completed: false,
     id: 2,
   },
   {
-    task: "Learn GoLang",
+    task: "Write CEH Exams",
     completed: false,
     id: 3,
   },
   {
-    task: "Learn NodeJs",
+    task: "Learn REST API",
     completed: false,
     id: 4,
   },
   {
-    task: "Learn GraphQl",
+    task: "Learn GraphQL",
     completed: false,
     id: 5,
   },
