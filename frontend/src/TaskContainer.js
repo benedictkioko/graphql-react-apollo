@@ -4,7 +4,10 @@ import { Task } from "./Task";
 import { AddTask } from "./AddTask";
 import { GET_TASKS } from "./Query";
 const TaskContainer = () => {
-  const { loading, error, data, refetch } = useQuery(GET_TASKS);
+  const { loading, error, data, refetch } = useQuery(GET_TASKS, {
+    pollInterval: 500,
+    fetchPolicy: "cache-and-network",
+  });
 
   return (
     <>
