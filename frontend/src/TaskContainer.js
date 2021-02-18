@@ -6,6 +6,7 @@ import { GET_TASKS } from "./Query";
 const TaskContainer = () => {
   const { loading, error, data, refetch } = useQuery(GET_TASKS, {
     pollInterval: 500,
+    fetchPolicy: "cache-and-network",
   });
 
   return (
